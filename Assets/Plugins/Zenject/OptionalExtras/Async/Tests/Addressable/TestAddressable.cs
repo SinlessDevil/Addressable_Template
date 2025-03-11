@@ -1,11 +1,10 @@
 #if EXTENJECT_INCLUDE_ADDRESSABLE_BINDINGS
 using System;
-using Zenject;
-using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using Zenject;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceLocations;
@@ -22,10 +21,10 @@ public class TestAddressable : ZenjectIntegrationTestFixture
         Resources.UnloadUnusedAssets();
     }
     
-    [UnityTest]
-    public IEnumerator TestAddressableAsyncLoad()
+    [Test]
+    public async UniTask TestAddressableAsyncLoad()
     {
-        yield return ValidateTestDependency();
+        await ValidateTestDependency();
         
         PreInstall();
         AsyncOperationHandle<GameObject> handle = default;
@@ -34,28 +33,27 @@ public class TestAddressable : ZenjectIntegrationTestFixture
             try
             {
                 var locationsHandle = Addressables.LoadResourceLocationsAsync("TestAddressablePrefab");
-                await locationsHandle.Task;
+                await locationsHandle.ToUniTask();
                 Assert.Greater(locationsHandle.Result.Count, 0, "Key required for test is not configured. Check Readme.txt in addressable test folder");
 
                 IResourceLocation location = locationsHandle.Result[0];
-                handle = Addressables.LoadAsset<GameObject>(location);
-                await handle.Task;
+                handle = Addressables.LoadAssetAsync<GameObject>(location);
+                await handle.ToUniTask();
                 return handle.Result;
             }
             catch (InvalidKeyException)
             {
-                
             }
             return null;
         }).AsCached();
         PostInstall();
 
-        yield return null;
-            
-        AsyncInject<GameObject> asycFoo = Container.Resolve<AsyncInject<GameObject>>();
+        await UniTask.Yield();
+        
+        AsyncInject<GameObject> asyncFoo = Container.Resolve<AsyncInject<GameObject>>();
 
         int frameCounter = 0;
-        while (!asycFoo.HasResult && !asycFoo.IsFaulted)
+        while (!asyncFoo.HasResult && !asyncFoo.IsFaulted)
         {
             frameCounter++;
             if (frameCounter > 10000)
@@ -63,17 +61,17 @@ public class TestAddressable : ZenjectIntegrationTestFixture
                 Addressables.Release(handle);
                 Assert.Fail();
             }
-            yield return null;    
+            await UniTask.Yield();    
         }
-            
+        
         Addressables.Release(handle);
         Assert.Pass();
     }
     
-    [UnityTest]
-    public IEnumerator TestAssetReferenceTMethod()
+    [Test]
+    public async UniTask TestAssetReferenceTMethod()
     {
-        yield return ValidateTestDependency();
+        await ValidateTestDependency();
 
         PreInstall();
 
@@ -92,16 +90,15 @@ public class TestAddressable : ZenjectIntegrationTestFixture
             {
                 Assert.Fail();
             }
-            yield return null;    
+            await UniTask.Yield();    
         }
         
         Addressables.Release(asyncPrefab.AssetReferenceHandle);
         Assert.Pass();
     }
     
-    [UnityTest]
-    [Timeout(10500)]
-    public IEnumerator TestFailedLoad()
+    [Test]
+    public async UniTask TestFailedLoad()
     {
         PreInstall();
         
@@ -109,7 +106,7 @@ public class TestAddressable : ZenjectIntegrationTestFixture
         {
             FailedOperation failingOperation = new FailedOperation();
             var customHandle = Addressables.ResourceManager.StartOperation(failingOperation, default(AsyncOperationHandle));   
-            await customHandle.Task;
+            await customHandle.ToUniTask();
 
             if (customHandle.Status == AsyncOperationStatus.Failed)
             {
@@ -120,11 +117,9 @@ public class TestAddressable : ZenjectIntegrationTestFixture
         }).AsCached();
         PostInstall();
 
-        yield return new WaitForEndOfFrame();
+        await UniTask.Yield();
         
-        LogAssert.ignoreFailingMessages = true;
         AsyncInject<GameObject> asyncGameObj = Container.Resolve<AsyncInject<GameObject>>();
-        LogAssert.ignoreFailingMessages = false;
 
         Assert.IsFalse(asyncGameObj.HasResult);
         Assert.IsTrue(asyncGameObj.IsCompleted);
@@ -139,22 +134,18 @@ public class TestAddressable : ZenjectIntegrationTestFixture
         }
     }
 
-    private IEnumerator ValidateTestDependency()
+    private async UniTask ValidateTestDependency()
     {
-        AsyncOperationHandle<IList<IResourceLocation>> locationsHandle = default(AsyncOperationHandle<IList<IResourceLocation>>);
+        AsyncOperationHandle<IList<IResourceLocation>> locationsHandle;
         try
         {
             locationsHandle = Addressables.LoadResourceLocationsAsync("TestAddressablePrefab");
+            await locationsHandle.ToUniTask();
         }
-        catch (Exception e)
+        catch (Exception)
         {
             Assert.Inconclusive("You need to set TestAddressablePrefab key to run this test");
-            yield break;
-        }
-        
-        while (!locationsHandle.IsDone)
-        {
-            yield return null;
+            return;
         }
 
         var locations = locationsHandle.Result;
