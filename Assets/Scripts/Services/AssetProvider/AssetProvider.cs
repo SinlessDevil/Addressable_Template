@@ -120,12 +120,28 @@ namespace Services.AssetProvider
 
         public void CleanUp()
         {
-            foreach (List<AsyncOperationHandle> handles in _handles.Values)
-            foreach (AsyncOperationHandle handle in handles)
-                Addressables.Release(handle);
-            
+            foreach (var handles in _handles.Values)
+            foreach (var handle in handles)
+                if (handle.IsValid() && handle.IsDone)
+                    Addressables.Release(handle);
+
+            foreach (var handle in _completedHandles.Values)
+                if (handle.IsValid() && handle.IsDone)
+                    Addressables.Release(handle);
+
+            foreach (var handles in _persistenceHandles.Values)
+            foreach (var handle in handles)
+                if (handle.IsValid() && handle.IsDone)
+                    Addressables.Release(handle);
+
+            foreach (var handle in _completedPersistenceHandles.Values)
+                if (handle.IsValid() && handle.IsDone)
+                    Addressables.Release(handle);
+
             _handles.Clear();
             _completedHandles.Clear();
+            _persistenceHandles.Clear();
+            _completedPersistenceHandles.Clear();
         }
 
         private async UniTask<T> RunWithCacheOnComplete<T>(AsyncOperationHandle<T> handle, string cacheKey) where T : class

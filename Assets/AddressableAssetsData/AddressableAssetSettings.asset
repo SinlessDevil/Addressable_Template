@@ -35,9 +35,9 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 5c7579cddaed22845a48238278f5d2a6
+    m_Id: 52d6ef17f543a40489ed1aaaabf80584
   m_RemoteCatalogLoadPath:
-    m_Id: 08a55cf248994b34c950f3519a5bbec2
+    m_Id: e3e07703827bdb34dab81f30bfae6a19
   m_ContentStateBuildPathProfileVariableName: Remote.LoadPath
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
