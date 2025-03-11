@@ -7,7 +7,7 @@ namespace StaticData
     [CreateAssetMenu(menuName = "StaticData/PreloadConfig", fileName = "PreloadConfig", order = 0)]
     public class PreloadConfig : ScriptableObject
     {
-        public List<PreloadGroup> LevelGroups;
+        public List<PreloadGroup> LevelGroups = new();
     }
     
     [Serializable]
