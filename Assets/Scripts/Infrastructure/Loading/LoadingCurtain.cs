@@ -1,5 +1,7 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +10,7 @@ namespace Infrastructure.Loading
     public class LoadingCurtain : MonoBehaviour, ILoadingCurtain
     {
         private const float Delay = 1.75f;
-        private const float AnimationDuration = 0.65f;
+        private const float AnimationDuration = 0.7f;
         
         [SerializeField] private RectTransform _logoCuratinContainer;
         [Space(10)] [Header("Between Levels Panel Components")]
@@ -22,12 +24,13 @@ namespace Infrastructure.Loading
         [Space(10)] [Header("Progress Bars")]
         [SerializeField] private ProgressBar _progressBarStart;
         [SerializeField] private ProgressBar _progressBarBetweenLevels;
+        [SerializeField] private List<CanvasGroup> _progressBar;
         
         private RectTransform _currentContainer;
-        private StatusLoading _currentStatusLoading;
+        private StatusLoading _currentStatusLoading = StatusLoading.Start;
         private Status Current = Status.Hided;
         
-        private Coroutine _loadingTextCoroutine;
+        private CancellationTokenSource _loadingTextCts;
 
         private Action _onContinueClick;
         
@@ -36,16 +39,17 @@ namespace Infrastructure.Loading
             DontDestroyOnLoad(this);
             
             _retryLoadingButton.onClick.AddListener(OnContinueClick);
-
-            SetCurrentStatusLoading(StatusLoading.Start);
             
-            _logoCuratinContainer.gameObject.SetActive(false);
-            _levelCurtainContainer.gameObject.SetActive(false);
+            ResetPanels();
+            ResetProgressBars();
+            
+            SetCurrentStatusLoading(StatusLoading.Start);
         }
 
         private void OnDestroy()
         {
             _retryLoadingButton.onClick.RemoveListener(OnContinueClick);
+            _loadingTextCts?.Cancel();
         }
 
         public bool IsActive { get; private set; } = false;
@@ -81,6 +85,8 @@ namespace Infrastructure.Loading
             IsActive = true;
             gameObject.SetActive(true);
 
+            _progressBar.ForEach(x => x.alpha = 1f);
+            
             switch (_currentStatusLoading)
             {
                 case StatusLoading.Start:
@@ -92,24 +98,21 @@ namespace Infrastructure.Loading
             }
         }
 
-        public void Hide()
+        public async void Hide()
         {
-            StartCoroutine(AnimationOpen());
+            await AnimationOpenRoutine();
             StartLoadingTextAnimation();
         }
-
+        
         private void SetCurrentStatusLoading(StatusLoading loading)
         {
             _currentStatusLoading = loading;
-            switch (_currentStatusLoading)
+            _currentContainer = loading switch
             {
-                case StatusLoading.Start:
-                    _currentContainer = _logoCuratinContainer;
-                    break;
-                case StatusLoading.BetweenLevels:
-                    _currentContainer = _levelCurtainContainer;
-                    break;
-            }
+                StatusLoading.Start => _logoCuratinContainer,
+                StatusLoading.BetweenLevels => _levelCurtainContainer,
+                _ => _currentContainer
+            };
         }
         
         private void SetUpLevelCurtainComponents()
@@ -132,37 +135,53 @@ namespace Infrastructure.Loading
             _noInternetWarning.SetActive(false);
         }
         
-        private IEnumerator AnimationOpen()
+        private async UniTask AnimationOpenRoutine()
         {
+            await UniTask.Delay(TimeSpan.FromSeconds(Delay));
+            
+            StopLoadingTextAnimation();
+            ResetProgressBars();
+            
             switch (_currentStatusLoading)
             {
                 case StatusLoading.Start:
-                    yield return AnimationOpenLevelCurtainRoutine();
+                    await AnimationOpenLogoCurtainRoutine();
                     break;
                 case StatusLoading.BetweenLevels:
-                    yield return AnimationOpenLogoCurtainRoutine(); 
+                    await AnimationOpenLevelCurtainRoutine();
                     break;
             }
             
-            StopLoadingTextAnimation();
-
             SetCurrentStatusLoading(StatusLoading.BetweenLevels);
             
-            gameObject.SetActive(false);
+            _currentContainer.gameObject.SetActive(false);
+            
+            ResetPanels();
             
             IsActive = false;
         }
 
-        private IEnumerator AnimationOpenLevelCurtainRoutine()
+        private void ResetProgressBars()
         {
-            yield return new WaitForSeconds(Delay);
+            _progressBarStart.DrawBar(0f);
+            _progressBarBetweenLevels.DrawBar(0f);
             
+            _progressBar.ForEach(x => x.alpha = 0f);
+        }
+
+        private void ResetPanels()
+        {
+            _logoCuratinContainer.gameObject.SetActive(false);
+            _levelCurtainContainer.gameObject.SetActive(false);
+        }
+        
+        private async UniTask AnimationOpenLevelCurtainRoutine()
+        {
             float screenWidth = Screen.width;
             float elapsedTime = 0f;
 
             Vector2 leftStart = _left.anchoredPosition;
             Vector2 leftTarget = new Vector2(-screenWidth / 2, leftStart.y);
-            
             Vector2 rightStart = _right.anchoredPosition;
             Vector2 rightTarget = new Vector2(screenWidth / 2, rightStart.y);
 
@@ -172,20 +191,15 @@ namespace Infrastructure.Loading
                 float t = elapsedTime / AnimationDuration;
                 _left.anchoredPosition = Vector2.Lerp(leftStart, leftTarget, t);
                 _right.anchoredPosition = Vector2.Lerp(rightStart, rightTarget, t);
-                yield return null;
+                await UniTask.NextFrame();
             }
-
-            _left.anchoredPosition = leftTarget;
-            _right.anchoredPosition = rightTarget;
         }
 
-        private IEnumerator AnimationOpenLogoCurtainRoutine()
+        private async UniTask AnimationOpenLogoCurtainRoutine()
         {
-            yield return new WaitForSeconds(Delay);
-
-            float screenHeight = Screen.height;
+            float screenHeight = Screen.height / 2;
             float elapsedTime = 0f;
-
+            
             Vector2 startPos = _logoCuratinContainer.anchoredPosition;
             Vector2 targetPos = new Vector2(startPos.x, screenHeight);
 
@@ -194,36 +208,35 @@ namespace Infrastructure.Loading
                 elapsedTime += Time.deltaTime;
                 float t = elapsedTime / AnimationDuration;
                 _logoCuratinContainer.anchoredPosition = Vector2.Lerp(startPos, targetPos, t);
-                yield return null;
+                await UniTask.Yield();
             }
-
-            _logoCuratinContainer.anchoredPosition = targetPos;
         }
         
         private void StartLoadingTextAnimation()
         {
-            _loadingTextCoroutine = StartCoroutine(LoadingTextEffectRoutine());
+            _loadingTextCts = new CancellationTokenSource();
+            LoadingTextEffectRoutine(_loadingTextCts.Token).Forget();
         }
 
         private void StopLoadingTextAnimation()
         {
-            if (_loadingTextCoroutine != null)
-                StopCoroutine(_loadingTextCoroutine);
+            _loadingTextCts?.Cancel();
+            _loadingText.text = "";
         }
 
-        private IEnumerator LoadingTextEffectRoutine()
+        private async UniTaskVoid LoadingTextEffectRoutine(CancellationToken token)
         {
             string baseText = "Loading";
-            while (true)
+            while (!token.IsCancellationRequested)
             {
-                _loadingText.text = baseText + "";
-                yield return new WaitForSeconds(0.15f);
+                _loadingText.text = baseText;
+                await UniTask.Delay(TimeSpan.FromSeconds(0.15f), cancellationToken: token);
                 _loadingText.text = baseText + ".";
-                yield return new WaitForSeconds(0.15f);
+                await UniTask.Delay(TimeSpan.FromSeconds(0.15f), cancellationToken: token);
                 _loadingText.text = baseText + "..";
-                yield return new WaitForSeconds(0.15f);
+                await UniTask.Delay(TimeSpan.FromSeconds(0.15f), cancellationToken: token);
                 _loadingText.text = baseText + "...";
-                yield return new WaitForSeconds(0.15f);
+                await UniTask.Delay(TimeSpan.FromSeconds(0.15f), cancellationToken: token);
             }
         }
     }

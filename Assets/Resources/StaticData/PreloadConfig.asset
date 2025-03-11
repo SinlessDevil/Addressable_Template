@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelGroups:
   - AssetGroupName: ChapterTwo
-    LoadAfterUnlocked: 3
+    LoadAfterUnlocked: 20
   - AssetGroupName: ChapterThree
-    LoadAfterUnlocked: 6
+    LoadAfterUnlocked: 20
   - AssetGroupName: ChapterFour
-    LoadAfterUnlocked: 9
+    LoadAfterUnlocked: 20
