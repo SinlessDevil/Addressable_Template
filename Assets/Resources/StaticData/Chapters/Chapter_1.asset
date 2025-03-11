@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa6b612230e74841b612a99264a0799, type: 3}
-  m_Name: ChapterStaticData
+  m_Name: Chapter_1
   m_EditorClassIdentifier: 
+  NameScene: Level 1-3
   ChapterId: 1
   Levels:
   - {fileID: 11400000, guid: 5eb134ae70d5f334cbdfacbf6c1ff667, type: 2}

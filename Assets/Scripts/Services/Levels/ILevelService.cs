@@ -8,6 +8,7 @@ namespace Services.Levels
     public interface ILevelService
     {
         public LevelStaticData GetCurrentLevelStaticData();
+        public ChapterStaticData GetCurrentChapterStaticData();
         public int GetCurrentLevel();
         public int GetCurrentChapter();
         public int GetCurrentLevelIndex();

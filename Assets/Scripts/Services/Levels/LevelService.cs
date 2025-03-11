@@ -31,6 +31,11 @@ namespace Services.Levels
                 _persistenceProgressService.PlayerData.PlayerLevelData.CurrentProgress.LevelId);
         }
 
+        public ChapterStaticData GetCurrentChapterStaticData()
+        {
+            return _staticDataService.ForChapter(_persistenceProgressService.PlayerData.PlayerLevelData.CurrentProgress.ChapterId);
+        }
+
         public int GetCurrentLevel() => 
             _persistenceProgressService.PlayerData.PlayerLevelData.CurrentProgress.LevelId;
 

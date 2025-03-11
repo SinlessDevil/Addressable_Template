@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: dfb9c0823ed620b458fe498f8ee4739f
   m_currentHash:
     serializedVersion: 2
-    Hash: 26c37282152fd4c4db1633f71bef9398
+    Hash: 025db6776a94a09da768a151c712aea8
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
     m_Id: 5c7579cddaed22845a48238278f5d2a6
   m_RemoteCatalogLoadPath:
     m_Id: 08a55cf248994b34c950f3519a5bbec2
-  m_ContentStateBuildPathProfileVariableName: <default settings path>
+  m_ContentStateBuildPathProfileVariableName: Remote.LoadPath
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -63,13 +63,13 @@ MonoBehaviour:
       - m_Id: 08a55cf248994b34c950f3519a5bbec2
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 52d6ef17f543a40489ed1aaaabf80584
-        m_Value: 'ServerData/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 5c7579cddaed22845a48238278f5d2a6
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: d618e56858b619c4b8d025130499a9e0
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e3e07703827bdb34dab81f30bfae6a19
-        m_Value: <undefined>
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: b3820eb3f4a6ff74aa0b08adc75ebeeb
       m_ProfileName: Develop
@@ -83,7 +83,7 @@ MonoBehaviour:
       - m_Id: d618e56858b619c4b8d025130499a9e0
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e3e07703827bdb34dab81f30bfae6a19
-        m_Value: <undefined>
+        m_Value: 'https://storage.googleapis.com/test_one_addressable_bucket/[BuildTarget]'
     m_ProfileEntryNames:
     - m_Id: 08a55cf248994b34c950f3519a5bbec2
       m_Name: Local.LoadPath

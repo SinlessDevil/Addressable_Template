@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PreloadConfig
   m_EditorClassIdentifier: 
   LevelGroups:
-  - AssetGroupName: 
+  - AssetGroupName: ChapterTwo
     LoadAfterUnlocked: 3
-  - AssetGroupName: 
+  - AssetGroupName: ChapterThree
     LoadAfterUnlocked: 6
-  - AssetGroupName: 
+  - AssetGroupName: ChapterFour
     LoadAfterUnlocked: 9

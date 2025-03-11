@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa6b612230e74841b612a99264a0799, type: 3}
+  m_Name: Chapter_3
+  m_EditorClassIdentifier: 
+  NameScene: Level 6-9
+  ChapterId: 1
+  Levels:
+  - {fileID: 11400000, guid: ed87be575116e31449b5cfc512cedd18, type: 2}
+  - {fileID: 11400000, guid: df24b6c6f9b86fe45b5ec1db49b72e5f, type: 2}
+  - {fileID: 11400000, guid: 7157b85a849588a48b58696bb9a2d3ad, type: 2}

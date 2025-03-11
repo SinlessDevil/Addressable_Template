@@ -16,22 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dfb9c0823ed620b458fe498f8ee4739f
-  m_SerializeEntries:
-  - m_GUID: 8a253e0f0a6c608499dd2a4b57034fe2
-    m_Address: Game
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fa0f1a1f2495e6e4ea6eea94fe33b516
-    m_Address: Menu
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8222b14338f41054792b85dd431d0114
-    m_Address: Assets/Resources_moved/ChapterOne
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:
