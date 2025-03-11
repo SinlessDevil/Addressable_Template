@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ad36c3d044d312e44a986a07f2c7f0b2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 258453
+  packageName: Low Poly FPS Map Lite
+  packageVersion: 1.0
+  assetPath: Assets/LowPolyFPSLite/Prefabs/Box_01.prefab
+  uploadId: 598300

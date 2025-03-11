@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 30c819560420f824da028f3502f83728
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 258453
+  packageName: Low Poly FPS Map Lite
+  packageVersion: 1.0
+  assetPath: Assets/LowPolyFPSLite/Prefabs/WallPart_01.prefab
+  uploadId: 598300

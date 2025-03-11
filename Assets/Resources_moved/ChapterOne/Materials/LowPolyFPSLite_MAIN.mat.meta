@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c2a7a3006db1df48b06fed4222a5f52
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 258453
+  packageName: Low Poly FPS Map Lite
+  packageVersion: 1.0
+  assetPath: Assets/LowPolyFPSLite/Materials/LowPolyFPSLite_MAIN.mat
+  uploadId: 598300

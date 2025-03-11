@@ -16,7 +16,177 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 6ed555d29cc752f4d89b97878c80c6aa
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 76bee4a029f0d2e46bcb67ea7f2989b4
+    m_Address: Level 1-3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 843b24fbcef09cf4d945d84fcc2b55c9
+    m_Address: Assets/Resources_moved/ChapterOne/Textures/LowPolyFPSLite_Texture_01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5eb9200176bece4791f121120fced60
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/WoodPlank_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d4998389175ab44ea4d4fc6a1c102cd
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/WoodPlank_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ec4006999a806c4291e661db75cac17
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/WoodPlank_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30c819560420f824da028f3502f83728
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/WallPart_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac006f1c9321c054e96f86dee52dc183
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb81a67ad1cf2984784527d333cae7d2
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12786b453b3a7cc4a815f43857ab7460
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5c251c4f6ea3694285b311cea75f2a2
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06e40c0b4555acb4eadd88bfaeffe3e9
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af11b45e3d568f946be2cdb52ca3f1c0
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Wall_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e059938ac4b575643a3345b530869d15
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Stairs_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db39c55cba61f5f4886de5e25b22fac6
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Jug_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c6a1648d6f5d8b45997037cbb0ea5ff
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Jug_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d1aed8ada79e4d4e99084037c3b094a
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Building_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd8212a6b4413da43bfbf816034a6a69
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Brick_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad36c3d044d312e44a986a07f2c7f0b2
+    m_Address: Assets/Resources_moved/ChapterOne/Prefabs/Box_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5aed2168a6a1164d81628e51595bf38
+    m_Address: Assets/Resources_moved/ChapterOne/Models/WoodPlank_03.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57ecd8d4bf3b6124aa543ead27473004
+    m_Address: Assets/Resources_moved/ChapterOne/Models/WoodPlank_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2fe27ef7bd8aa942b87f1e38ebb7311
+    m_Address: Assets/Resources_moved/ChapterOne/Models/WoodPlank_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 538b559633151a146bddd33879fb3038
+    m_Address: Assets/Resources_moved/ChapterOne/Models/WallPart_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a54bb0fbf93b09440a77975415674e2a
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Wall_03.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47d9ba618c9260546b1e7a7140eb3387
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Wall_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebba13c26b2bde34c8bfc04ec541a2ee
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Wall_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5412998123e133b4da183e46471b4069
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Stairs_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc311a4c632fde64aa84ee4f754c3a14
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Jug_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 346ea8ab0a1c21c4e95694bac3863161
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Jug_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02084f0f713eea74295858c46a13e18d
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Building_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 950917a4ef28cca44a20d771d5324b78
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Brick_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54b42edcaad42ae47a7bb0aed0c47e98
+    m_Address: Assets/Resources_moved/ChapterOne/Models/Box_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c2a7a3006db1df48b06fed4222a5f52
+    m_Address: Assets/Resources_moved/ChapterOne/Materials/LowPolyFPSLite_MAIN.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 970a0ae5296891a4393bbfc7c4419e60
+    m_Address: Assets/Resources_moved/ChapterOne/Materials/LowPolyFPSLite_BG2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cb6d29d223bf9240a63d960c41cab6c
+    m_Address: Assets/Resources_moved/ChapterOne/Materials/LowPolyFPSLite_BG.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:

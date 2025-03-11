@@ -16,7 +16,122 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 568fe6956c7a2244ab52908f563788ca
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: bf5295b9d3c8ad54c8bd3c859871074e
+    m_Address: Level 3-6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b68740a6e3081c4d9e6c1cd18c97058
+    m_Address: Assets/Resources_moved/ChapterTwo/Textures/Middle_East_Building_lambert1_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ca6a254a41d49f46a93ee4d035871e2
+    m_Address: Assets/Resources_moved/ChapterTwo/Textures/Middle_East_Building_lambert1_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e779f4e3f8edde46ae29eb52d98f3ce
+    m_Address: Assets/Resources_moved/ChapterTwo/Textures/Middle_East_Building_BaseMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72d53ea8703ddae459369eff5619e233
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Stairs_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fd5db4a434e103468c077a1e3a2b949
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Stairs_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0330e8125ba92b244aef6b51a67355a3
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Pergola.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e25ea7d2c2352bd4abc465607ae3b400
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Middle_East_Building.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d62c97a9642b68498fc28b4e6bb516e
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Ground.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b4186092826a1a4f97b701a0849f7bd
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Fences.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4238f15a8c751e042aa4c725d181726b
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Clothes_Line.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33531fcb2c537ae478d26da8b234c151
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Cactus_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f2e0d7f67d76ba48bdd2e7af88a5a76
+    m_Address: Assets/Resources_moved/ChapterTwo/Prefabs/Cactus_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 249127b7fe7862241984010595e8217c
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Stairs_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3453c012e74d14f49835fea4724aadc2
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Stairs_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28211ff9df5852e49a60e0b9a94f1d41
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Pergola.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4caba1508200c5c45aa42b8030a53e03
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Middle_East_Building.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76f54d276e5c84f4fb8f8470f12c499d
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Ground.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a542facaeaecf2f4dbaf9e2f65657482
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Fences.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cf682f0adbf34340baa2088ab83d760
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Clothes_Line.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02312e4385465e14eb8b80944393fb24
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Cactus_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 159f4aa35a346014c91e00f4702bd46b
+    m_Address: Assets/Resources_moved/ChapterTwo/Models/Cactus_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db34520c9955cb64bb871f037260ea90
+    m_Address: Assets/Resources_moved/ChapterTwo/Materials/Middle_East_Building.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:
