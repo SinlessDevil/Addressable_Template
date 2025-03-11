@@ -1,4 +1,5 @@
-﻿using Services.StaticData;
+﻿using Infrastructure.Loading;
+using Services.StaticData;
 using UnityEngine;
 
 namespace Infrastructure.StateMachine.Game.States
@@ -27,6 +28,7 @@ namespace Infrastructure.StateMachine.Game.States
             Application.targetFrameRate = (int)_staticData.GameConfig.TargetFPS;
             
             _curtain.Show();
+            
             _sceneLoader.Load(_staticData.GameConfig.InitialScene, OnLevelLoad, isAddressable: false);
         }
 

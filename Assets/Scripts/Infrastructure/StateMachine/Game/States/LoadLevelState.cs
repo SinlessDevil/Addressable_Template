@@ -1,4 +1,5 @@
-﻿using Services.Factories.UIFactory;
+﻿using Infrastructure.Loading;
+using Services.Factories.UIFactory;
 using Services.Provides.Widgets;
 
 namespace Infrastructure.StateMachine.Game.States

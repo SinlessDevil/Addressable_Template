@@ -8,9 +8,6 @@ namespace StaticData
     public class PreloadConfig : ScriptableObject
     {
         public List<PreloadGroup> LevelGroups;
-        public List<PreloadGroup> EnemyGroup;
-        public List<PreloadGroup> WeaponGroup;
-        public List<PreloadGroup> CampGroup;
     }
     
     [Serializable]

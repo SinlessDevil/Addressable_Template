@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructure
+namespace Infrastructure.Loading
 {
     public interface ILoadingCurtain
     {
