@@ -12,26 +12,19 @@ namespace Infrastructure.StateMachine.Game.States
         private readonly IStateMachine<IGameState> _stateMachine;
         private readonly IPersistenceProgressService _persistenceProgressService;
         private readonly IStaticDataService _staticData;
-        private readonly IAssetPreloaderConductor _assetPreloaderConductor;
-        private readonly IAssetPreloaderConductor _preloaderConductor;
 
         public PreLoadGameState(
             IStateMachine<IGameState> stateMachine,
             IPersistenceProgressService persistenceProgressService,
-            IStaticDataService staticData,
-            IAssetPreloaderConductor assetPreloaderConductor)
+            IStaticDataService staticData)
         {
             _stateMachine = stateMachine;
             _persistenceProgressService = persistenceProgressService;
             _staticData = staticData;
-            _assetPreloaderConductor = assetPreloaderConductor;
-            _preloaderConductor = assetPreloaderConductor;
         }
         
         public void Enter(TypeLoad payload)
         {
-            _preloaderConductor.TryPreload();
-            
             if(TypeLoad.MenuLoading == payload)
             {
                 _stateMachine.Enter<LoadLevelState>();

@@ -1,6 +1,7 @@
 ﻿using Infrastructure.Loading;
 using Services.Factories.UIFactory;
 using Services.Levels;
+using Services.PreloaderConductor;
 using Services.Provides.Widgets;
 
 namespace Infrastructure.StateMachine.Game.States
@@ -13,6 +14,7 @@ namespace Infrastructure.StateMachine.Game.States
         private readonly IStateMachine<IGameState> _gameStateMachine;
         private readonly IWidgetProvider _widgetProvider;
         private readonly ILevelService _levelService;
+        private readonly IAssetPreloaderConductor _preloaderConductor;
 
         public LoadLevelState(
             IStateMachine<IGameState> gameStateMachine, 
@@ -20,7 +22,8 @@ namespace Infrastructure.StateMachine.Game.States
             ILoadingCurtain loadingCurtain, 
             IUIFactory uiFactory,
             IWidgetProvider widgetProvider,
-            ILevelService levelService)
+            ILevelService levelService,
+            IAssetPreloaderConductor preloaderConductor)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
@@ -28,10 +31,13 @@ namespace Infrastructure.StateMachine.Game.States
             _uiFactory = uiFactory;
             _widgetProvider = widgetProvider;
             _levelService = levelService;
+            _preloaderConductor = preloaderConductor;
         }
 
         public void Enter()
         {
+            _preloaderConductor.TryPreload();
+            
             var chapter = _levelService.GetCurrentChapterStaticData();
             var nameScene = chapter.NameScene;
             

@@ -23,6 +23,7 @@ namespace Infrastructure.StateMachine.Game.States
         public void Enter()
         {
             LoadOrCreatePlayerData();
+            InitResourecesLoading();
             
             _stateMachine.Enter<BootstrapAnalyticState>();
         }
@@ -45,5 +46,13 @@ namespace Infrastructure.StateMachine.Game.States
 
             return playerData;
         }
+        
+        private void InitResourecesLoading()
+        {
+            string version = UnityEngine.Application.version;
+            if (_progressService.PlayerData.Loading.Version != version)
+                _progressService.PlayerData.Loading.Reset(version);
+        }
+
     }
 }

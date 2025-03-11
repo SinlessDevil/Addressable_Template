@@ -78,7 +78,7 @@ namespace Infrastructure.Installers
             Container.BindInterfacesTo<LoseService>().AsSingle();
             Container.BindInterfacesTo<LevelLocalProgressService>().AsSingle();
             Container.BindInterfacesTo<AssetPreloaderService>().AsSingle();
-            Container.BindInterfacesTo<AssetProviderService>().AsSingle();
+            Container.BindInterfacesTo<AssetProvider>().AsSingle();
             Container.BindInterfacesTo<AssetPreloaderConductor>().AsSingle();
         }
 
