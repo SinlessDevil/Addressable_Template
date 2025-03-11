@@ -9,7 +9,7 @@ namespace UI.Buttons
         protected override void LoadState(StateLoader<IGameState> stateMachine)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
-            stateMachine.LoadState<LoadLevelState, string>(currentSceneName);
+            stateMachine.LoadState<LoadLevelState>();
         }
     }
 }

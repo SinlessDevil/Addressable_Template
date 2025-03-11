@@ -199,7 +199,7 @@ namespace UI.Menu.Windows.Map
             _levelService.SetUpCurrentLevel(levelNumber, chapterId);
             _saveLoadService.SaveProgress();
 
-            _stateMachine.Enter<LoadLevelState, string>(_staticData.GameConfig.GameScene);
+            _stateMachine.Enter<LoadLevelState>();
         }
 
         private void ClearLevelPool()

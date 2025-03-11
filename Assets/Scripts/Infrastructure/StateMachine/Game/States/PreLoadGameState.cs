@@ -26,7 +26,7 @@ namespace Infrastructure.StateMachine.Game.States
         {
             if(TypeLoad.MenuLoading == payload)
             {
-                _stateMachine.Enter<LoadLevelState, string>(_staticData.GameConfig.GameScene);
+                _stateMachine.Enter<LoadLevelState>();
                 return;
             }
             
@@ -39,7 +39,7 @@ namespace Infrastructure.StateMachine.Game.States
             }
             else
             {
-                _stateMachine.Enter<LoadLevelState, string>(_firstSceneName);
+                _stateMachine.Enter<LoadLevelState>();
             }
         }
 

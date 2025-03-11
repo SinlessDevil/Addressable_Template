@@ -98,7 +98,7 @@ namespace UI.PauseDisplayer
             _soundService.ButtonClick();
             _timeService.SimpleMode();
             
-            _gameStateMachine.Enter<LoadLevelState, string>(_staticDataService.GameConfig.GameScene);
+            _gameStateMachine.Enter<LoadLevelState>();
         }
 
         private void UpdateSetting(ref bool setting)

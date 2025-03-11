@@ -41,7 +41,7 @@ namespace Window.Finish.Lose
         {
             _soundService.ButtonClick();
             
-            _gameStateMachine.Enter<LoadLevelState, string>(_staticDataService.GameConfig.GameScene);
+            _gameStateMachine.Enter<LoadLevelState>();
         }
 
         protected override void OnExitToMenuButtonClick()
