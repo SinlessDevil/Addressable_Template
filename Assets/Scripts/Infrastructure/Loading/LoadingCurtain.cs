@@ -60,8 +60,6 @@ namespace Infrastructure.Loading
 
         public void ShowProgress(float progress)
         {
-            Debug.Log("ShowProgress: " + progress);
-            
             switch (_currentStatusLoading)
             {
                 case StatusLoading.Start:

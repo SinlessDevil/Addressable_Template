@@ -41,7 +41,6 @@ namespace Infrastructure.StateMachine.Game.States
         public void Enter()
         {
             _assetProvider.CleanUp();
-            _preloaderConductor.TryPreload();
             
             var chapter = _levelService.GetCurrentChapterStaticData();
             var nameScene = chapter.NameScene;
@@ -69,6 +68,8 @@ namespace Infrastructure.StateMachine.Game.States
             InitHud();
             
             InitProviders();
+            
+            _preloaderConductor.TryPreload();
         }
         
         private void InitProviders()
