@@ -15,7 +15,9 @@ namespace Services.StaticData
         private BalanceStaticData _balanceStaticData;
         private Dictionary<WindowTypeId, WindowConfig> _windowConfigs;
         private List<ChapterStaticData> _chapterStaticDatas = new();
+        private PreloadConfig _preloadConfig;
         
+        public PreloadConfig PreloadConfig => _preloadConfig;
         public GameStaticData GameConfig => _gameStaticData;
         public BalanceStaticData Balance => _balanceStaticData;
         public List<ChapterStaticData> Chapters => _chapterStaticDatas;
@@ -35,6 +37,9 @@ namespace Services.StaticData
             _chapterStaticDatas = Resources
                 .LoadAll<ChapterStaticData>(ResourcePath.ChaptersStaticDataPath)
                 .ToList();
+            
+            _preloadConfig = Resources
+                .Load<PreloadConfig>(ResourcePath.PreloadConfigPath);
         }
 
         public WindowConfig ForWindow(WindowTypeId windowTypeId) => _windowConfigs[windowTypeId];

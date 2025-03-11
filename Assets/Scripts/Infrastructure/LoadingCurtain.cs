@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,20 @@ namespace Infrastructure
         }
 
         public bool IsActive { get; private set; }
+
+        public event Action StartedShowEvent;
+        public event Action StartedHidedEvent;
+        public event Action FinishedHidedEvent;
+
+        public void ShowProgress(float progress)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ShowNoInternetWarning(Action onContinueClick)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Show()
         {

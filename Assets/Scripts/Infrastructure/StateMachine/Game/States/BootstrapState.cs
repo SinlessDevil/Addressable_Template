@@ -27,7 +27,7 @@ namespace Infrastructure.StateMachine.Game.States
             Application.targetFrameRate = (int)_staticData.GameConfig.TargetFPS;
             
             _curtain.Show();
-            _sceneLoader.Load(_staticData.GameConfig.InitialScene, OnLevelLoad);
+            _sceneLoader.Load(_staticData.GameConfig.InitialScene, OnLevelLoad, isAddressable: false);
         }
 
         public void Exit()

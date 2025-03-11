@@ -1,32 +1,41 @@
+using Services.AssetProvider;
 using Services.Factories.UIFactory;
+using Services.PreloaderConductor;
 
 namespace Infrastructure.StateMachine.Game.States
 {
     public class LoadMenuState : IPayloadedState<string>, IGameState
     {
+        private readonly IStateMachine<IGameState> _gameStateMachine;
         private readonly ISceneLoader _sceneLoader;
         private readonly ILoadingCurtain _loadingCurtain;
         private readonly IUIFactory _uiFactory;
-        private readonly IStateMachine<IGameState> _gameStateMachine;
-        
+        private readonly IAssetPreloaderConductor _preloaderConductor;
+        private readonly IAssetProvider _assetProvider;
+
         public LoadMenuState(
             IStateMachine<IGameState> gameStateMachine,
             ISceneLoader sceneLoader,
             ILoadingCurtain loadingCurtain,
-            IUIFactory uiFactory)
+            IUIFactory uiFactory,
+            IAssetPreloaderConductor preloaderConductor,
+            IAssetProvider assetProvider)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _loadingCurtain = loadingCurtain;
             _uiFactory = uiFactory;
+            _preloaderConductor = preloaderConductor;
+            _assetProvider = assetProvider;
         }
         
         public void Enter(string payload)
         {
             _loadingCurtain.Show();
-            _loadingCurtain.Hide();
             
-            _sceneLoader.Load(payload, InitMenuWorld);
+            _assetProvider.CleanUp();
+            
+            _sceneLoader.LoadForce(payload, InitMenuWorld, _loadingCurtain);
         }
 
         public void Exit()
@@ -40,6 +49,9 @@ namespace Infrastructure.StateMachine.Game.States
 
             var menuHud = _uiFactory.CreateMenuHud();
             menuHud.Initialize();
+            
+            _preloaderConductor.TryPreload();
+            _loadingCurtain.Hide();
         }
     }
 }

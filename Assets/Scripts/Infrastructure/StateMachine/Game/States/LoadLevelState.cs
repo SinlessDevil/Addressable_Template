@@ -28,7 +28,7 @@ namespace Infrastructure.StateMachine.Game.States
         public void Enter(string payload)
         {
             _loadingCurtain.Show();
-            _sceneLoader.Load(payload, OnLevelLoad);
+            _sceneLoader.LoadForce(payload, () => OnLevelLoad(), _loadingCurtain);
         }
 
         public void Exit()

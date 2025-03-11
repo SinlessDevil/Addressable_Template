@@ -1,9 +1,16 @@
-﻿namespace Infrastructure
+﻿using System;
+
+namespace Infrastructure
 {
     public interface ILoadingCurtain
     {
-        public bool IsActive { get; }
-        public void Show();
-        public void Hide();
+        event Action StartedShowEvent;
+        event Action StartedHidedEvent;
+        event Action FinishedHidedEvent;
+        void ShowProgress(float progress);
+        void ShowNoInternetWarning(Action onContinueClick);
+        
+        void Show();
+        void Hide();
     }
 }

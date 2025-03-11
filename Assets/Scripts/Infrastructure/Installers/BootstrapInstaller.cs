@@ -1,6 +1,8 @@
 using Infrastructure.StateMachine;
 using Infrastructure.StateMachine.Game;
 using Infrastructure.StateMachine.Game.States;
+using Services.AssetPreloader;
+using Services.AssetProvider;
 using Services.Factories.Game;
 using Services.Factories.UIFactory;
 using Services.Finish;
@@ -10,6 +12,7 @@ using Services.Input;
 using Services.Levels;
 using Services.LocalProgress;
 using Services.PersistenceProgress;
+using Services.PreloaderConductor;
 using Services.Provides.Widgets;
 using Services.Random;
 using Services.SaveLoad;
@@ -73,6 +76,9 @@ namespace Infrastructure.Installers
             Container.BindInterfacesTo<WinService>().AsSingle();
             Container.BindInterfacesTo<LoseService>().AsSingle();
             Container.BindInterfacesTo<LevelLocalProgressService>().AsSingle();
+            Container.BindInterfacesTo<AssetPreloaderService>().AsSingle();
+            Container.BindInterfacesTo<AssetProviderService>().AsSingle();
+            Container.BindInterfacesTo<AssetPreloaderConductor>().AsSingle();
         }
 
         private void BindGameStateMachine()
@@ -87,8 +93,7 @@ namespace Infrastructure.Installers
 
         private void BindSceneLoader()
         {
-            ISceneLoader sceneLoader = new SceneLoader(Container.Resolve<ICoroutineRunner>());
-            Container.Bind<ISceneLoader>().FromInstance(sceneLoader).AsSingle();
+            Container.BindInterfacesTo<SceneLoader>().AsSingle();
         }
 
         private void BindStaticDataService()
