@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0211444ce84ba7bb1e4174d95f5001, type: 3}
-  m_Name: PreloadConfig
+  m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
+  m_Name: Menu_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  LevelGroups:
-  - AssetGroupName: ChapterTwo
-    LoadAfterUnlocked: 3
-  - AssetGroupName: ChapterThree
-    LoadAfterUnlocked: 6
-  - AssetGroupName: ChapterFour
-    LoadAfterUnlocked: 9
+  m_Group: {fileID: 11400000, guid: 3171924417b3f5f48a03e8a458813735, type: 2}
+  m_StaticContent: 0
