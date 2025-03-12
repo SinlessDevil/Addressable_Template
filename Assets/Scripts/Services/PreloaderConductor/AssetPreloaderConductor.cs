@@ -31,22 +31,25 @@ namespace Services.PreloaderConductor
             _staticDataService = staticDataService;
         }
         
-        public void TryPreload()
+        public async UniTask TryPreload()
         {
-            TryPreloadByLevel();
+            await TryPreloadByLevel();
         }
 
-        private void TryPreloadByLevel()
+        private async UniTask TryPreloadByLevel()
         {
             int currentLevel = _progressService.PlayerData.PlayerLevelData.CurrentProgress.LevelId;
             
-            PreloadLevelDependency(currentLevel);
+            await PreloadLevelDependency(currentLevel);
         }
 
-        private async void PreloadLevelDependency(int level)
+        private async UniTask PreloadLevelDependency(int level)
         {
-            foreach (PreloadGroup levelConfig in LevelConfigsForPreload(level))
-                await PreloadDependency(levelConfig);
+            var preloadTasks = LevelConfigsForPreload(level)
+                .Select(config => PreloadDependency(config))
+                .ToArray();
+            
+            await UniTask.WhenAll(preloadTasks);
         }
 
         private async UniTask PreloadDependency(PreloadGroup config)
@@ -79,10 +82,5 @@ namespace Services.PreloaderConductor
                 bool isAlreadyPreloaded = _progressService.PlayerData.Loading.LoadedKeys.Contains(x.AssetGroupName);
                 return x.LoadAfterUnlocked <= level && !isAlreadyPreloaded;
             });
-    }
-
-    public interface IAssetPreloaderConductor
-    {
-        void TryPreload();
     }
 }

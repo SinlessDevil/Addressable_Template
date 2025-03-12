@@ -1,4 +1,5 @@
-﻿using Infrastructure.Loading;
+﻿using Cysharp.Threading.Tasks;
+using Infrastructure.Loading;
 using Services.AssetProvider;
 using Services.Factories.UIFactory;
 using Services.Levels;
@@ -61,7 +62,7 @@ namespace Infrastructure.StateMachine.Game.States
             _gameStateMachine.Enter<GameLoopState>();
         }
 
-        private void InitGameWorld()
+        private async UniTask InitGameWorld()
         {
             _uiFactory.CreateUiRoot();
             
@@ -69,7 +70,7 @@ namespace Infrastructure.StateMachine.Game.States
             
             InitProviders();
             
-            _preloaderConductor.TryPreload();
+            await _preloaderConductor.TryPreload();
         }
         
         private void InitProviders()

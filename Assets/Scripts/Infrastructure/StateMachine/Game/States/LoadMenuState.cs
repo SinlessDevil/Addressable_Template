@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Infrastructure.Loading;
 using Services.AssetProvider;
 using Services.Factories.UIFactory;
@@ -36,7 +37,7 @@ namespace Infrastructure.StateMachine.Game.States
             
             _assetProvider.CleanUp();
             
-            _sceneLoader.LoadForce(payload, InitMenuWorld, _loadingCurtain);
+            _sceneLoader.LoadForce(payload, () => OnMenuLoad(), _loadingCurtain);
         }
 
         public void Exit()
@@ -44,15 +45,16 @@ namespace Infrastructure.StateMachine.Game.States
             
         }
 
-        private void InitMenuWorld()
+        private async UniTask OnMenuLoad()
         {
             _uiFactory.CreateUiRoot();
 
             var menuHud = _uiFactory.CreateMenuHud();
             menuHud.Initialize();
             
-            _preloaderConductor.TryPreload();
-            _loadingCurtain.Hide();
+           await _preloaderConductor.TryPreload();
+           
+           _loadingCurtain.Hide();
         }
     }
 }
