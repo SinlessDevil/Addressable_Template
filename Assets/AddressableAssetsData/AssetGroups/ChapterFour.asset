@@ -15,411 +15,551 @@ MonoBehaviour:
   m_GroupName: ChapterFour
   m_Data:
     m_SerializedData: []
-  m_GUID: 7e8466e078e3d174c9df2a9edc2a857c
+  m_GUID: 64060fcf1f5987d4cb75ebd06881acb6
   m_SerializeEntries:
-  - m_GUID: d06a350515f34af43865a86bb4c2adaa
-    m_Address: Level 9-12
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 21336316c1953c841ac00b019570ff43
     m_Address: Assets/Resources_moved/ChapterFour/Materials/barre_01l_wood.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 538267a94aa5b00488fb25df219252fc
     m_Address: Assets/Resources_moved/ChapterFour/Materials/barrel_01_metal.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: df8452c07a7a78e408a012dd3ec5bcfb
     m_Address: Assets/Resources_moved/ChapterFour/Materials/cart_01_main.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5a6c928af12c1634facd0ed9c8013eb0
     m_Address: Assets/Resources_moved/ChapterFour/Materials/cart_01_metal.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b2e30ea042cc66d4dae0b668b75bdae2
     m_Address: Assets/Resources_moved/ChapterFour/Materials/cart_01_secondary.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a66bff250649e421c8f8cdbfab69dc07
     m_Address: Assets/Resources_moved/ChapterFour/Materials/Demo_plane.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fd3e1dcd577ba6643ab93e93280e9c59
     m_Address: Assets/Resources_moved/ChapterFour/Materials/fances.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9dac8c4109475fb46b0d42c0c058e0bd
     m_Address: Assets/Resources_moved/ChapterFour/Materials/flower_01_top.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49587e57e69ceb049a4aa657205dacd1
     m_Address: Assets/Resources_moved/ChapterFour/Materials/flower_02_top.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0acdb497b650e34cb50e02ac881625d
     m_Address: Assets/Resources_moved/ChapterFour/Materials/flower_03_Albedo.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 084a8e0b8bc1d5142a434c5f70dd89d8
     m_Address: Assets/Resources_moved/ChapterFour/Materials/flower_center.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 17fa94891ad6e1a4e96185e77427f72b
     m_Address: Assets/Resources_moved/ChapterFour/Materials/house_01_emission.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 08fec52d580ccab4487541c9e6276f6c
     m_Address: Assets/Resources_moved/ChapterFour/Materials/house_01_light_wood.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6b73aea3458bd7a4ab497c4b8aca7c5b
     m_Address: Assets/Resources_moved/ChapterFour/Materials/house_01_logs.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 35bca24f9c1901a488a923d8e55e5756
     m_Address: Assets/Resources_moved/ChapterFour/Materials/house_01_pipe.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a9189838ce0966b449746ed7a129a7a2
     m_Address: Assets/Resources_moved/ChapterFour/Materials/house_01_roof.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2442ce0cd8f6a534c842e7c4c8b4e935
     m_Address: Assets/Resources_moved/ChapterFour/Materials/landscape.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2e1f4f8b4e5215f4890a4e42d3914941
     m_Address: Assets/Resources_moved/ChapterFour/Materials/LeafAndGrass.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d901ff455a2cf4a789bbb9906e84b5ec
     m_Address: Assets/Resources_moved/ChapterFour/Materials/Podium.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2870bb9a67a3e4f06b9a33ca3fc56ae7
     m_Address: Assets/Resources_moved/ChapterFour/Materials/SkyBox.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 26c951f1ebdcbbc46a9fc064f0da613e
     m_Address: Assets/Resources_moved/ChapterFour/Materials/stairs_01.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 822f476ca3b34b743b52c359fc26200f
     m_Address: Assets/Resources_moved/ChapterFour/Materials/stones.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9136449bef2d2c942a08e20a7809c2dc
     m_Address: Assets/Resources_moved/ChapterFour/Materials/trailway.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7a9aca32dd224a44a90d061f35542e80
     m_Address: Assets/Resources_moved/ChapterFour/Materials/tree_trunk.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c6137d15694f5d46b0629929ae01273
     m_Address: Assets/Resources_moved/ChapterFour/Models/barrel_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2f70be416e73fa2488391e9750218495
     m_Address: Assets/Resources_moved/ChapterFour/Models/cart_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5fc6609b30586114bb281ca5ffdc0822
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_horizontal_part_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a9566b2d61cbb724bb315bc9a8737c0e
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_horizontal_part_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1b39412ee519873478ef05bcd2117f7b
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_horizontal_part_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 40ec9cfcdc5c1924b8046ce9b97525b6
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_horizontal_part_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 42cc7c328a14b6841ba09e11b9afb363
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_vertical_part_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7f75d36ee7242974e9b16b6c330ea7e0
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_vertical_part_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fe29b2d556a49684ebbfa9c4e6d5735c
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_vertical_part_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 28f4158f0ebbb6046984f1158aeca0e9
     m_Address: Assets/Resources_moved/ChapterFour/Models/fences_vertical_part_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ef910aff3f044b14caf601370a353ec3
     m_Address: Assets/Resources_moved/ChapterFour/Models/flower_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb10ad058288afb4baf0e8111627bfd4
     m_Address: Assets/Resources_moved/ChapterFour/Models/flower_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 761822da1aa35af48a8594c95b112bf0
     m_Address: Assets/Resources_moved/ChapterFour/Models/flower_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f08f45e86bad1fe4593d90d9fcbc6033
     m_Address: Assets/Resources_moved/ChapterFour/Models/grass_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8fc067e640c71a54188cc9a775622eb8
     m_Address: Assets/Resources_moved/ChapterFour/Models/grass_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9dc4b88754cb6534e8e22097b7e84e48
     m_Address: Assets/Resources_moved/ChapterFour/Models/house_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 261ff3dd765c6b44c99b090fa252965d
     m_Address: Assets/Resources_moved/ChapterFour/Models/landscape_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 244287f48d76b2141845948c8bcd9d22
     m_Address: Assets/Resources_moved/ChapterFour/Models/landscape_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7be2942267ca8df44adb41be8fb8a144
     m_Address: Assets/Resources_moved/ChapterFour/Models/landscape_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 140170d8881f72c4ea261cbe63d34eac
     m_Address: Assets/Resources_moved/ChapterFour/Models/little_stone_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3e12c2100d0f6d4ca18d8d242957433
     m_Address: Assets/Resources_moved/ChapterFour/Models/little_stone_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 22cf88aae79b9f84f8103204f74c393f
     m_Address: Assets/Resources_moved/ChapterFour/Models/little_stone_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03d7e0d37cdd0934097cc002920e244c
     m_Address: Assets/Resources_moved/ChapterFour/Models/little_stone_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 585c7545a6e77d040aa928e478e0832a
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 178f729d6b023a240b3eb84dd71d4f80
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5a7d76fa813310245a9a6c8684370f8f
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 06bf7876729e20146b434d1a43fe9197
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5fb7981100db6c343ac02566e0581e77
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_05.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c4b476cde40d1b94cb40966e3fbaed5e
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_06.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 73398d0dfbecec841a069f575f1db305
     m_Address: Assets/Resources_moved/ChapterFour/Models/plank_07.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 12016aeb73968c5458f00447a7ca749d
     m_Address: Assets/Resources_moved/ChapterFour/Models/stairs_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 95a06f06a0ae78a45b998f0dbccbf94a
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4306e1fc031fc3d49b084307e88d6e42
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e45f2c7fcfef0374c86999dfd88d6de3
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03a9d27e89c5b0943bd833274469527e
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7de61137bdb0b0d42befc2e277c0597c
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_05.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 702d1fd205c022e478aabbea0877d80b
     m_Address: Assets/Resources_moved/ChapterFour/Models/stone_06.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f67a5b37bea489940a7a92ebf6768157
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c068edddd51ebd547866c70986fe9574
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_01_closed.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8a6603d42d59edf4e806b69843e5ffcd
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cca806a1c4c8a2c44812c40988f1a721
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_02_closed_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ce2dd45fa16adb143a6d2369107b3efa
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_02_closed_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9185bebce5c8f0d408b00be13300f23b
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cd23df12058bcc3498107666ba9cf5c8
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_03_closed_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2a4ae4adc3f7e854dadae8e0a617db25
     m_Address: Assets/Resources_moved/ChapterFour/Models/trailway_03_closed_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 10de62937a6b85e43a7a810ac2ae0411
     m_Address: Assets/Resources_moved/ChapterFour/Models/tree_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c2ebf7365479d44a9634adae53f7c84
     m_Address: Assets/Resources_moved/ChapterFour/Models/tree_02.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5a3dc97596c6de04bbc7e26c2828b97e
     m_Address: Assets/Resources_moved/ChapterFour/Models/tree_03.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2d596492934f7224a8cd4b58ebcee9fc
     m_Address: Assets/Resources_moved/ChapterFour/Models/tree_04.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 40ddd02c6bf614a45b99b61c12c5399c
     m_Address: Assets/Resources_moved/ChapterFour/Models/tree_05.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0192026fedc71147bba86c7caa25cd3
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/3planks_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf2e2f2a20611e448a6f744afda63faf
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/7planks_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3bec5058743290f4c884ed6e3a440d08
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/barrel_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f5bd1b648c2766b40805fae6cab6f017
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/cart_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 98e3619974dd73b4096091fd08c93b88
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fance_11.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da7330704dfc5a14f833e91c2d78faef
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4a9b0d76dca37b4084ab518f93f7a4b
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 495f91368d81cca4499246edbd1c847e
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86eb686f90eb89c4483e7f05a0bb902f
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dcff0303240db084abfe409d9d186f43
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b9ffbd1ea71ffcc40b9a601fbb5a7ceb
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26ce4e99725dfcb49b7579d135424f9c
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_07.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b7803faee2893e9488d3c943ba5944ca
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_08.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 655be39acd0faeb4090016940203e592
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_09.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f384c885341c7b499cc29581cede1d7
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/fence_10.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6b5d41519eefeb46be3660d3a128ead
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/flower_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bc8fd101120683c478ba6672d19545d3
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/flower_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dff9d0bdb58139842bb1e36810f81a3f
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/flower_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e6db8cb049e41842b2d71a4bf267e28
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/grass_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82283b9f91bc48a409e19206bb89d528
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/grass_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 254bd85c722f56a45b620ef7ca823317
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/house_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 502c111240dcc8347b74d82f997d35a6
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/little_stone_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a383b0693fd86554b874d1292f822a41
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/little_stone_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 91c7395fc87581b4ab2ca025640d786c
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/little_stone_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2cdb24b0a70d9e64a979e2a9ed55f7a5
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/little_stone_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86d67c8980bc4cd4f847b3877b973f07
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stairs_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a0a878f902f347242a034838ad481be3
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df1e8373c1c992745bcb12a63bb4ddad
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9298fd130b9a22545a727f0f4bea9e2c
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36ba605db8dae1943822caa918a58644
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e33217e41d0c724ea714e3afbefc971
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d9ad1c471a9c2dd47802fd6a681ecd3d
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/stone_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6c768eebc3e3324bb2e364c4375f7d9
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/tree_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af0bed822f9e6d04ca3a89c011d44142
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/tree_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 44a2d0d7c8cc07a479a75703582f7700
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/tree_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 04170d48deaefc84b854ff023892abb9
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/tree_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21018057991ff104ea7eb7f63ed94174
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/ReadyToGame/tree_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bc2a2d2cea686b94b9a5d935732119c6
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/landscape_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38e80406f81d2cd4db0986b686361fb3
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/landscape_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 941f97f2515ff104d9041d90526a17f8
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/landscape_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 819046b4e90d9c24e93ec241ae2315c5
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a3617302c91e4fc438c43b22e4a4e805
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 160b32b8fc314f447b92b7072963936c
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc1d660d1529050428fcb5bf78e24965
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 579dc985001cd4d4e93be6391fd912b5
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 96a29a13e2b3b794dade49b14dc84fa1
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe7f4b8622f50874c8838a6606d4b6a2
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/plank_07.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a63212f11356af64bb8604c90dbab474
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9efe041706d1c2749bfbc45dab67d18e
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_01_closed.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7260cea2cdebe7b42aa736197382eeb6
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 92e32177790b43645a09f4f18fe01a77
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_02_closed_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3af6d9aca89c81a47927cd9857c97282
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_02_closed_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 81c7dfdea6864b147b2483f406e0f41f
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 11ec96e9817421441b9748b5c20783ee
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_03_closed_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c544efed2677384cb3cb6123f68ed45
+    m_Address: Assets/Resources_moved/ChapterFour/Prefabs/SoloObjects/trailway_03_closed_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 40d4b0fd12c051a48a77b5d1bdeabf8c
     m_Address: Assets/Resources_moved/ChapterFour/Textures/barrel_01_AO.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f0bd82069914ef044a26469e59ec166f
     m_Address: Assets/Resources_moved/ChapterFour/Textures/cart_01_AO.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5963cbb39cf3666458e50da5b492b1c6
     m_Address: Assets/Resources_moved/ChapterFour/Textures/emission.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2731f16465f22014f8ac841379d31887
     m_Address: Assets/Resources_moved/ChapterFour/Textures/flower_03_Albedo.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8dfa73b09f05811498400eff8e119f3d
     m_Address: Assets/Resources_moved/ChapterFour/Textures/house_01_AO.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d06a350515f34af43865a86bb4c2adaa
+    m_Address: Level 9-12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c946b8bfff4c901408e13a82d0096094, type: 2}
-    - {fileID: 11400000, guid: 7a94c6a6112b8d847a35830c5394a288, type: 2}
+    - {fileID: 11400000, guid: 0c669b123b2040944a3b11d64680e416, type: 2}
+    - {fileID: 11400000, guid: cb8e78fd405015d479e10166f37150f5, type: 2}

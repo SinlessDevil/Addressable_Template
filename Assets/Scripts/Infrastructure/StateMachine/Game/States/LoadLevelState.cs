@@ -57,12 +57,12 @@ namespace Infrastructure.StateMachine.Game.States
         
         private async UniTask  OnLevelLoad()
         {
-            await InitGameWorld();
+            InitGameWorld();
 
             _gameStateMachine.Enter<GameLoopState>();
         }
 
-        private async UniTask InitGameWorld()
+        private void InitGameWorld()
         {
             _uiFactory.CreateUiRoot();
             
@@ -70,7 +70,7 @@ namespace Infrastructure.StateMachine.Game.States
             
             InitProviders();
             
-            await _preloaderConductor.TryPreload();
+            _preloaderConductor.TryPreload();
         }
         
         private void InitProviders()

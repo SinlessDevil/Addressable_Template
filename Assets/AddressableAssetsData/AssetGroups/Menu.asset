@@ -15,16 +15,15 @@ MonoBehaviour:
   m_GroupName: Menu
   m_Data:
     m_SerializedData: []
-  m_GUID: 08b0375f2aae78b4898ad125d97e4827
+  m_GUID: 24468f9f360ca1d46b61a5bee22bfe10
   m_SerializeEntries:
   - m_GUID: fa0f1a1f2495e6e4ea6eea94fe33b516
     m_Address: Menu
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 7d32289f4d4effd44bf50a3a6d2b12c9, type: 2}
-    - {fileID: 11400000, guid: c0c14ac7579f4294d8f2571675cb6775, type: 2}
+    - {fileID: 11400000, guid: f57f88b18b96bf749b2f3795c306ea26, type: 2}
+    - {fileID: 11400000, guid: 8a53a1d6e3a923342963ccd0ded1ecf1, type: 2}

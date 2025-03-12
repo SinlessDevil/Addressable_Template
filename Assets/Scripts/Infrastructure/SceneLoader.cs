@@ -16,11 +16,11 @@ namespace Infrastructure
         private const float MinDisplayedProgress = 0.2f;
 
         private readonly ICoroutineRunner _coroutineRunner;
-        private readonly IAssetPreloaderService _assetPreloaderService;
+        private readonly IAssetPreloaderService _assetPreloader;
 
-        public SceneLoader(ICoroutineRunner coroutineRunner, IAssetPreloaderService assetPreloaderService)
+        public SceneLoader(ICoroutineRunner coroutineRunner, IAssetPreloaderService assetPreloader)
         {
-            _assetPreloaderService = assetPreloaderService;
+            _assetPreloader = assetPreloader;
             _coroutineRunner = coroutineRunner;
         }
 
@@ -42,13 +42,13 @@ namespace Infrastructure
                 onLevelLoad?.Invoke();
                 return;
             }
-            
+
             AsyncOperationStatus asyncOperationStatus = AsyncOperationStatus.None;
-            if (isAddressable && await _assetPreloaderService.NeedLoadAssetsFor(name))
+            if (isAddressable && await _assetPreloader.NeedLoadAssetsFor(name))
             {
                 Debug.LogError($"Content not loaded for {name}");
                 Coroutine fakeLoadingCurtain = _coroutineRunner.StartCoroutine(FakeLoadingBar(loadingCurtain));
-                asyncOperationStatus = await _assetPreloaderService.LoadAssetsFor(name);
+                asyncOperationStatus = await _assetPreloader.LoadAssetsFor(name);
                 _coroutineRunner.StopCoroutine(fakeLoadingCurtain);
             }
 

@@ -15,386 +15,311 @@ MonoBehaviour:
   m_GroupName: ChapterThree
   m_Data:
     m_SerializedData: []
-  m_GUID: 1a030d53e217de24f8e5832f77397f7d
+  m_GUID: f611c8b19c7a1384b9b986d256dc0eee
   m_SerializeEntries:
-  - m_GUID: cdaea328b71585c4c977b237523f44d4
-    m_Address: Level 6-9
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8e1c6b5fe8e1b894faf9bece3225e691
     m_Address: Assets/Resources_moved/ChapterThree/Materials/NhaChinh_Meo_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b48752c0aa776f4f84ec0f03945534c
     m_Address: Assets/Resources_moved/ChapterThree/Materials/NhaChinh_Sach_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a500c22c78b8eb43b8ba5c1478d1097
     m_Address: Assets/Resources_moved/ChapterThree/Materials/NhaChinh_Tien_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 97e97544a3675f54182f2267445220f5
     m_Address: Assets/Resources_moved/ChapterThree/Materials/Nhaphu_Da_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a23d916832397bc428fbfc2a5ebc722a
     m_Address: Assets/Resources_moved/ChapterThree/Materials/NhaPhu_Nha_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8fb78e00a80dc9a4d920b419d5d87d84
     m_Address: Assets/Resources_moved/ChapterThree/Materials/NhaPhu_Tru_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4f24d8ac1b0bd7b4798985a9ff248f12
     m_Address: Assets/Resources_moved/ChapterThree/Materials/ONen_v01_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3eedfea02eec22443a171ee325a2817f
     m_Address: Assets/Resources_moved/ChapterThree/Materials/ONen_v02_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 61a9426b1c055a145a72f875e8765164
     m_Address: Assets/Resources_moved/ChapterThree/Materials/ONen_v03_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 827325723d03b244887cff22c6f6ff63
     m_Address: Assets/Resources_moved/ChapterThree/Materials/Plane_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: edfb653de4ca3c543826b21141fc20ca
     m_Address: Assets/Resources_moved/ChapterThree/Materials/SkyBox_M.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a79931c02fcb8a546b51a8c99b9dc7c1
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 574d2cc4186b70a40bdd0fdca0487939
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a242b1989253ad94c82e5d20a2889ccb
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 96ca9945a913e72488a1db727bf22557
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 327d2479b3297344baeb65b6f4da76c3
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_05.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ed30291e10e6fcb45993aec651b4f5e6
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_06.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c457b7bb303108d40a12e53ed406a2ab
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_07.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d2bf0ebcbe749d44a8bede14d78db88c
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_08.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1345343aa811c64448b11a09e8bd2154
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_09.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 56a8b1e354eef1f4ebf6bfa1d1df19f3
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Da_10.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 92d42ef73d5ac48499c780c0de4ea961
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Nha_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c6d6a19e6667be4cb16ace608483315
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Nha_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0a9c676e4031bf64895e6d990ca35fc2
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Nha_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1efc0a90cc8487f468beceeac529bec6
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fdb6a282f807eb545a1198f1e44bf038
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 51c650a1c96c7ba41a6cc9ae03523c20
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5091a557a03668247afc7c2a5a96449a
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d29fc0549bbf90244b9dd2e247765d22
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_05.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0bf2b92e794960748a964386704fdc3c
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_NhaPhu_06.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 29899342630061e408fdbd8e20ea25cd
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v1_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 78bb39816be3a7b4eb68b4d8227b7006
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v1_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b5fae6b5787c4fc49a2b8c4f60192cdb
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v1_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 97353bc8c81b931488ca60c509122125
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v1_04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0939b20054d455d44918d1beb6f0c07b
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 232c93b7f5333744d8867e32811dd1fa
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 849c88931bfe0d24bab21e04c32bd5e2
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4945416a31ce9cf428d851e1a819d757
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e5f7cfef50612844b756e30bbea94c8
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_05.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fb281a23561c1be4c80d6847fbf12bc7
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_06.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5095955f92cea0d44b5ac3c33bdf888a
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_07.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 885dbef34b99d7d498fd1ac2e7016808
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_08.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7ba582c60b8e2844929fc26b499ef5f
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_09.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e1d90b23beea5904a96a2820153a57f3
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_10.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fa3f56c5ae79bf743ab35e87d7f93019
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_11.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9d8b5a7cbc4fdf647a5f097046e70f94
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v2_12.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9df07dbbd2b52c8479eb003e2a411cab
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v3_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6380dceae049ed04f928945592a73cef
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v3_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f82af82dbc5361c468b4449409c3dc82
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v3_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: af06ea43eb4363c42a547562acfd5ef7
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_O_Nen_v3_04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5a9a8701a625d3343a6ac6e4f48445ed
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Plane.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ce1fce6cb12b82941afe1a8da34c4392
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_SkyBox.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 956816109c1f43643ab9571a7644dc21
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Tru_01.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a0e5f7f60747a8840aac0a960a6de6cd
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Tru_02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 07cd34ba8a57738478b2b93e1cbc6d75
     m_Address: Assets/Resources_moved/ChapterThree/Prefabs/SM_Tru_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f1c5bc1720ede8742ae6620832f0c13d
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Meo_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 41cc4419e22f26648ad76ea047baad62
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Meo_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 54d0436eca41912408aa8be674aa75d7
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Sach_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: efbdeec4d8aad914395d505b7847d85c
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Sach_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5ad787bf3ebd7b74e9fb09773112afbb
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Tien_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ccb0afc2c57699c4a9e72b6d6f614556
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaChinh_Tien_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8a3b791c7f4b9ee47b1695a6c435a44c
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Da_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e0318b0d99704d4884bf0748d1d1f0f
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Da_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 72ebe9936fe3b134993dc1482bb38c37
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Nha_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 71500feee3538fb40a2a0b640e43d984
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Nha_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5bc0d3d1b5753ac4db590c72d48acb59
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Tru_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 19e7de09e7aa95c49b71db2e1783ce10
     m_Address: Assets/Resources_moved/ChapterThree/Texture/NhaPhu_Tru_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 422607a4cd4b1d74da2595891f2726d9
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v01_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1ffbb91f117ffe54697a2da9b6cda498
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v01_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9f4c85172dc7161408f185a41d377fda
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v02_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3e1be49f56ec9214e836409fc7fa9ce6
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v02_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be66f13821ffee24989d5ae48785433e
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v03_Base_color.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 38b71bb18ca723e41b0c29f70bac65eb
     m_Address: Assets/Resources_moved/ChapterThree/Texture/ONen_v03_Normal_OpenGL.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9ff839bfb39ec5e42bba555ad741216f
     m_Address: Assets/Resources_moved/ChapterThree/Texture/Plane.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdaea328b71585c4c977b237523f44d4
+    m_Address: Level 6-9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bb0cfb84952dabf41b2f793208026ade, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 16ec48874a2bdb843a6c89e0c59bb5bd, type: 2}
-    - {fileID: 11400000, guid: eb2aaae11ad7d7142b90d5778aafbef0, type: 2}
+    - {fileID: 11400000, guid: 04bcb30f23fa4b04d92d25dd3a8a6fc8, type: 2}
+    - {fileID: 11400000, guid: 90e2e9649b9e18c469bf85c384f37297, type: 2}

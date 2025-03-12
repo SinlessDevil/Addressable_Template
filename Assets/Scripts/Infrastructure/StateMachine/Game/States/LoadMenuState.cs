@@ -45,14 +45,13 @@ namespace Infrastructure.StateMachine.Game.States
             
         }
 
-        private async UniTask OnMenuLoad()
+        private void OnMenuLoad()
         {
             _uiFactory.CreateUiRoot();
 
             var menuHud = _uiFactory.CreateMenuHud();
             menuHud.Initialize();
-            
-           await _preloaderConductor.TryPreload();
+            _preloaderConductor.TryPreload();
            
            _loadingCurtain.Hide();
         }

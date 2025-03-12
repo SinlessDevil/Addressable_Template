@@ -13,9 +13,8 @@ namespace Services.AssetPreloader
     public class AssetPreloaderService : IAssetPreloaderService
     {
         private readonly IStaticDataService _staticData;
-        private readonly Dictionary<string, List<AsyncOperationHandle>> _handlers = new();
-        private readonly Dictionary<string, bool> _loadingOperations = new();
-        
+        private readonly Dictionary<string, List<AsyncOperationHandle>> _handlers = new Dictionary<string, List<AsyncOperationHandle>>();
+
         public AssetPreloaderService(IStaticDataService staticData)
         {
             _staticData = staticData;
@@ -23,12 +22,7 @@ namespace Services.AssetPreloader
 
         public async UniTask<bool> NeedLoadAssetsFor(string address)
         {
-            Debug.Log($"[NeedLoadAssetsFor] Checking download size for address: {address}");
-    
             long size = await Addressables.GetDownloadSizeAsync(address).Task;
-    
-            Debug.Log($"[NeedLoadAssetsFor] Address: {address}, Download Size: {size}");
-    
             return size != 0;
         }
         
@@ -38,22 +32,8 @@ namespace Services.AssetPreloader
             return size != 0;
         }
 
-        public async UniTask<AsyncOperationStatus> LoadAssetsFor(string address)
-        {
-            if (_loadingOperations.ContainsKey(address))
-            {
-                Debug.LogWarning($"[LoadAssetsFor] {address} It's already downloading!");
-                return AsyncOperationStatus.None;
-            }
-            
-            _loadingOperations[address] = true;
-    
-            var status = await Load(address, cacheKey: address);
-    
-            _loadingOperations.Remove(address);
-    
-            return status;
-        }
+        public async UniTask<AsyncOperationStatus> LoadAssetsFor(string address) => 
+            await Load(address, cacheKey: address);
         
         public async UniTask<AsyncOperationStatus> LoadAssetsFor(AssetReference assetReference) => 
             await Load(assetReference, cacheKey: assetReference.AssetGUID);
@@ -82,40 +62,26 @@ namespace Services.AssetPreloader
 
         private async UniTask<AsyncOperationStatus> Load(string address, string cacheKey)
         {
-            Debug.Log($"Addr: Start loading {address} cached by {cacheKey}.");
-
+            Debug.Log($"Addr: Start loading dependency for {address} cached by {cacheKey}.");
+            
             if (!await NeedLoadAssetsWithWarningFor(address))
-            {
-                Debug.LogWarning($"Addr: No need to load {address}. Exiting.");
                 return AsyncOperationStatus.None;
-            }
-
+            
             if (IsLoading(cacheKey))
-            {
-                Debug.Log($"Addr: {address} is already loading. Waiting...");
                 await WaitCompletion(cacheKey);
+
+            if (_handlers.ContainsKey(cacheKey))
+            {
+                Debug.Log($"Addr: Has cache for {address} cached by {cacheKey}");
+                if (!await NeedLoadAssetsWithWarningFor(address))
+                    return AsyncOperationStatus.None;
             }
 
-            Debug.Log($"Addr: Downloading {address}...");
-    
-            AsyncOperationHandle handle = Addressables.LoadAssetAsync<object>(address);
-    
-            await handle.Task;
-
-            if (!handle.IsValid()) 
-            {
-                Debug.LogError($"[Load] Invalid handle for {address}");
-                return AsyncOperationStatus.Failed;
-            }
-    
-            if (handle.Status == AsyncOperationStatus.Failed) 
-            {
-                Debug.LogError($"[Load] Failed to load {address}. Error: {handle.Status}, Exception: {handle.OperationException}");
-                return AsyncOperationStatus.Failed;
-            }
-    
-            Debug.Log($"[Load] Successfully loaded {address}");
-    
+            Debug.Log($"Addr: Loading dependency for {address} cached by {cacheKey}...");
+            var handle = Addressables.DownloadDependenciesAsync(address, true);
+            await RunWithCache(handle, cacheKey);
+            Debug.Log($"Addr: Loaded dependency for {address} cached by {cacheKey}. Result {handle.Status}");
+         
             return handle.Status;
         }
 

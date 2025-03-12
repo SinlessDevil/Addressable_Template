@@ -31,25 +31,22 @@ namespace Services.PreloaderConductor
             _staticDataService = staticDataService;
         }
         
-        public async UniTask TryPreload()
+        public void TryPreload()
         {
-            await TryPreloadByLevel();
+            TryPreloadByLevel();
         }
 
-        private async UniTask TryPreloadByLevel()
+        private void TryPreloadByLevel()
         {
             int currentLevel = _progressService.PlayerData.PlayerLevelData.CurrentProgress.LevelId;
             
-            await PreloadLevelDependency(currentLevel);
+            PreloadLevelDependency(currentLevel);
         }
 
-        private async UniTask PreloadLevelDependency(int level)
+        private async void PreloadLevelDependency(int level)
         {
-            var preloadTasks = LevelConfigsForPreload(level)
-                .Select(config => PreloadDependency(config))
-                .ToArray();
-            
-            await UniTask.WhenAll(preloadTasks);
+            foreach (PreloadGroup levelConfig in LevelConfigsForPreload(level))
+                await PreloadDependency(levelConfig);
         }
 
         private async UniTask PreloadDependency(PreloadGroup config)

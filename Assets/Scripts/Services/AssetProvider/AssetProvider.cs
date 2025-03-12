@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
-using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
@@ -22,7 +21,7 @@ namespace Services.AssetProvider
         
         public async UniTask<T> Load<T>(AssetReference assetReference) where T : class
         {
-            Debug.Log(assetReference);
+            //Debug.Log(assetReference);
             string cacheKey = assetReference.AssetGUID + assetReference.SubObjectName;
             if (_completedHandles.TryGetValue(cacheKey, out AsyncOperationHandle completedHandle) ||
                 _completedPersistenceHandles.TryGetValue(cacheKey, out completedHandle))
@@ -35,7 +34,7 @@ namespace Services.AssetProvider
 
         public async UniTask<T> Load<T>(string address) where T : class
         {
-            Debug.Log(address);
+            //Debug.Log(address);
             if (_completedHandles.TryGetValue(address, out AsyncOperationHandle completedHandle) ||
                 _completedPersistenceHandles.TryGetValue(address, out completedHandle))
                 return completedHandle.Result as T;
@@ -47,7 +46,7 @@ namespace Services.AssetProvider
         
         public async UniTask<T> LoadPersistence<T>(AssetReference assetReference) where T : class
         {
-            Debug.Log(assetReference);
+            //Debug.Log(assetReference);
             string cacheKey = assetReference.AssetGUID + assetReference.SubObjectName;
             if (_completedHandles.TryGetValue(cacheKey, out AsyncOperationHandle completedHandle) ||
                 _completedPersistenceHandles.TryGetValue(cacheKey, out completedHandle))
@@ -60,7 +59,7 @@ namespace Services.AssetProvider
 
         public async UniTask<T> LoadPersistence<T>(string address) where T : class
         {
-            Debug.Log(address);
+            //Debug.Log(address);
             if (_completedHandles.TryGetValue(address, out AsyncOperationHandle completedHandle) ||
                 _completedPersistenceHandles.TryGetValue(address, out completedHandle))
                 return completedHandle.Result as T;
