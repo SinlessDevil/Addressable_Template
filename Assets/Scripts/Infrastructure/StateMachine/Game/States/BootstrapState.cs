@@ -1,4 +1,5 @@
-﻿using Infrastructure.Loading;
+﻿using Cysharp.Threading.Tasks;
+using Infrastructure.Loading;
 using Services.StaticData;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ namespace Infrastructure.StateMachine.Game.States
             _curtain = curtain;
         }
 
-        public void Enter()
+        public async UniTaskVoid Enter()
         {
             Application.targetFrameRate = (int)_staticData.GameConfig.TargetFPS;
             
@@ -32,7 +33,7 @@ namespace Infrastructure.StateMachine.Game.States
             _sceneLoader.Load(_staticData.GameConfig.InitialScene, OnLevelLoad, isAddressable: false);
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
 
         }

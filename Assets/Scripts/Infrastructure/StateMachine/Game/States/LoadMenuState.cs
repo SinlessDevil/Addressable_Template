@@ -31,7 +31,7 @@ namespace Infrastructure.StateMachine.Game.States
             _assetProvider = assetProvider;
         }
         
-        public void Enter(string payload)
+        public async UniTaskVoid Enter(string payload)
         {
             _loadingCurtain.Show();
             
@@ -40,7 +40,7 @@ namespace Infrastructure.StateMachine.Game.States
             _sceneLoader.LoadForce(payload, () => OnMenuLoad(), _loadingCurtain);
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
             
         }

@@ -1,5 +1,5 @@
+using Cysharp.Threading.Tasks;
 using Services.PersistenceProgress;
-using Services.PreloaderConductor;
 using Services.StaticData;
 using UnityEngine.SceneManagement;
 
@@ -23,7 +23,7 @@ namespace Infrastructure.StateMachine.Game.States
             _staticData = staticData;
         }
         
-        public void Enter(TypeLoad payload)
+        public async UniTaskVoid Enter(TypeLoad payload)
         {
             if(TypeLoad.MenuLoading == payload)
             {
@@ -44,7 +44,7 @@ namespace Infrastructure.StateMachine.Game.States
             }
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
                 
         }

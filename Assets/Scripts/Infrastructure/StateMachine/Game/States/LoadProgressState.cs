@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Services.PersistenceProgress;
 using Services.PersistenceProgress.Player;
 using Services.SaveLoad;
@@ -20,7 +21,7 @@ namespace Infrastructure.StateMachine.Game.States
             _saveLoadService = saveLoadService;
         }
 
-        public void Enter()
+        public async UniTaskVoid Enter()
         {
             LoadOrCreatePlayerData();
             InitResourecesLoading();
@@ -28,7 +29,7 @@ namespace Infrastructure.StateMachine.Game.States
             _stateMachine.Enter<BootstrapAnalyticState>();
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
             
         }

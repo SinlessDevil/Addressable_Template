@@ -39,7 +39,7 @@ namespace Infrastructure.StateMachine.Game.States
             _assetProvider = assetProvider;
         }
 
-        public void Enter()
+        public async UniTaskVoid Enter()
         {
             _assetProvider.CleanUp();
             
@@ -50,14 +50,14 @@ namespace Infrastructure.StateMachine.Game.States
             _sceneLoader.LoadForce(nameScene, () => OnLevelLoad(), _loadingCurtain);
         }
         
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
             _loadingCurtain.Hide();
         }
         
-        protected virtual void OnLevelLoad()
+        private async UniTask  OnLevelLoad()
         {
-            InitGameWorld();
+            await InitGameWorld();
 
             _gameStateMachine.Enter<GameLoopState>();
         }

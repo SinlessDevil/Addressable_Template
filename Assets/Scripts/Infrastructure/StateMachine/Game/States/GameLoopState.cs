@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Services.Input;
 using Services.Levels;
 using Services.LocalProgress;
@@ -31,7 +32,7 @@ namespace Infrastructure.StateMachine.Game.States
             _timeService = timeService;
         }
         
-        public void Enter()
+        public async UniTaskVoid Enter()
         {
             
         }
@@ -41,7 +42,7 @@ namespace Infrastructure.StateMachine.Game.States
             
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
             _inputService.Cleanup();
             _widgetProvider.CleanupPool();

@@ -1,7 +1,9 @@
-﻿namespace Infrastructure.StateMachine.Game.States
+﻿using Cysharp.Threading.Tasks;
+
+namespace Infrastructure.StateMachine.Game.States
 {
     public interface IExitable
     {
-        void Exit();
+        UniTaskVoid Exit();
     }
 }

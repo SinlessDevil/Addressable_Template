@@ -1,3 +1,5 @@
+using Cysharp.Threading.Tasks;
+
 namespace Infrastructure.StateMachine.Game.States
 {
     public class BootstrapAnalyticState : IState, IGameState
@@ -9,12 +11,12 @@ namespace Infrastructure.StateMachine.Game.States
             _stateMachine = stateMachine;
         }
 
-        public void Enter()
+        public async UniTaskVoid Enter()
         {
             _stateMachine.Enter<PreLoadGameState, TypeLoad>(TypeLoad.InitialLoading);
         }
 
-        public void Exit()
+        public async UniTaskVoid Exit()
         {
 
         }
